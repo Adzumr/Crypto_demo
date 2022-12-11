@@ -13,7 +13,7 @@ class PriceCard extends StatelessWidget {
   }) : super(key: key);
 
   final TextEditingController volumeController;
-  final ValueNotifier<double> price;
+  final ValueNotifier<num> price;
 
   @override
   Widget build(BuildContext context) {

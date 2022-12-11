@@ -1,5 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:cryppto_demo/main.dart';
+import 'package:cryppto_demo/utils/widgets/app_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -24,7 +25,6 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Future getData() async {
-    await controller.getCurrency();
     await controller.getCryptoData();
   }
 
@@ -44,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
                 style: appFontStyles.titleStyle,
               ),
               SizedBox(height: 4.h),
-              Expanded(
+              Flexible(
                 child: FutureBuilder(
                   future: getData(),
                   builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -53,7 +53,9 @@ class _MainScreenState extends State<MainScreen> {
                       return const Center(
                         child: CircularProgressIndicator.adaptive(),
                       );
-                    } else {
+                    } else if (snapshot.connectionState ==
+                            ConnectionState.done &&
+                        controller.coinList!.isNotEmpty) {
                       return ListView.builder(
                         itemCount: apiController.coinList!.length,
                         itemBuilder: (BuildContext context, int index) {
@@ -79,6 +81,31 @@ class _MainScreenState extends State<MainScreen> {
                                 }),
                           );
                         },
+                      );
+                    } else {
+                      return Center(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Something went wrong",
+                              style: appFontStyles.titleStyle.copyWith(
+                                color: Colors.red,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 2.h),
+                            AppElevatedButton(
+                              onPressed: () {
+                                setState(() {
+                                  getData();
+                                });
+                              },
+                              title: "Refresh",
+                            ),
+                          ],
+                        ),
                       );
                     }
                   },

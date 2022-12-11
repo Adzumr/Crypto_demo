@@ -31,12 +31,7 @@ class CoinWidget extends StatelessWidget {
         style: appFontStyles.titleStyle,
       ),
       subtitle: Text(
-        CurrencyFormatter.format(
-            coin.currentPrice! * controler.nairaPrice!, nairaSettings),
-        // coin.currentPrice == null
-        //     ? "0.0"
-        //     : (coin.currentPrice! * controler.nairaPrice!)
-        //         .toStringAsFixed(2),
+        CurrencyFormatter.format(coin.currentPrice!, nairaSettings),
         style: appFontStyles.bodyStyle,
       ),
     );

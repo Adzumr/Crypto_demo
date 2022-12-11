@@ -1,7 +1,7 @@
 class CoinModel {
   final String? name;
   final String? image;
-  final double? currentPrice;
+  final num? currentPrice;
 
   CoinModel({
     this.name,
@@ -12,7 +12,7 @@ class CoinModel {
   CoinModel.fromJson(Map<String, dynamic> json)
       : name = json['name'] as String?,
         image = json['image'] as String?,
-        currentPrice = json['current_price'] as double?;
+        currentPrice = json['current_price'] as num?;
 
   Map<String, dynamic> toJson() => {
         'name': name,

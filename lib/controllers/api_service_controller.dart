@@ -9,32 +9,7 @@ import '../utils/constants.dart';
 
 class ApiServiceController extends GetxController {
   CoinModel? coinModel;
-  List<CoinModel>? coinList;
-  double? nairaPrice;
-  Future getCurrency() async {
-    final header = {
-      "X-RapidAPI-Key": currencyApi,
-    };
-
-    log("currency data Loading...");
-    try {
-      final response = await http.get(
-        Uri.parse(currencyUrl),
-        headers: header,
-      );
-      if (response.statusCode == 200) {
-        nairaPrice = double.tryParse(response.body);
-        log("Naira: $nairaPrice");
-      } else {
-        log(response.body);
-      }
-    } on Exception catch (e) {
-      log("Exception: $e");
-    } finally {
-      log("done...");
-    }
-  }
-
+  List<CoinModel>? coinList = [];
   Future getCryptoData() async {
     log("Loading...");
     try {
@@ -60,9 +35,13 @@ class ApiServiceController extends GetxController {
           }
         }
         log(coinList!.length.toString());
+      } else {
+        log("Coin Error: ${response.body}");
       }
     } on Exception catch (e) {
       log("Exception: $e");
+    } catch (e) {
+      log("Error: $e");
     } finally {
       log("done...");
     }

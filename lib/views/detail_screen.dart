@@ -19,8 +19,8 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController volumeController = TextEditingController();
     ApiServiceController controller = Get.find<ApiServiceController>();
-    final ValueNotifier<double> price = ValueNotifier<double>(
-        coinModel!.currentPrice! * controller.nairaPrice!);
+    final ValueNotifier<num> price = ValueNotifier<num>(
+        coinModel!.currentPrice!);
     double? volume = 1.0;
     return Scaffold(
       backgroundColor: appColors.shadowColor,
@@ -78,10 +78,7 @@ class DetailScreen extends StatelessWidget {
                 AppElevatedButton(
                   onPressed: () {
                     FocusManager.instance.primaryFocus?.unfocus();
-
-                    final unitInNaira =
-                        coinModel!.currentPrice! * controller.nairaPrice!;
-                    price.value = volume! * unitInNaira;
+                    price.value = volume! * coinModel!.currentPrice!;
                   },
                   title: "Submit",
                 ),
