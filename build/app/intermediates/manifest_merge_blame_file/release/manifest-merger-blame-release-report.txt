@@ -27,8 +27,8 @@
 17-->[androidx.core:core:1.6.0] /Users/Adzumr/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 18        android:icon="@mipmap/ic_launcher"
 18-->/Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:9:9-43
-19        android:label="cryppto App" >
-19-->/Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:7:9-36
+19        android:label="Crypto App" >
+19-->/Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:7:9-35
 20        <activity
 20-->/Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:10:9-30:20
 21            android:name="com.example.cryppto_demo.MainActivity"

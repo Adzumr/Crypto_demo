@@ -10,7 +10,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Adzu
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /Users/Adzumr/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:7:9-36
+		ADDED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
 		ADDED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:9:9-43
 	android:name

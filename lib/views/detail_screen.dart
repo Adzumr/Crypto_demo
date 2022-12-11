@@ -19,8 +19,8 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController volumeController = TextEditingController();
     ApiServiceController controller = Get.find<ApiServiceController>();
-    final ValueNotifier<num> price = ValueNotifier<num>(
-        coinModel!.currentPrice!);
+    final ValueNotifier<num> price =
+        ValueNotifier<num>(coinModel!.currentPrice!);
     double? volume = 1.0;
     return Scaffold(
       backgroundColor: appColors.shadowColor,
@@ -31,9 +31,7 @@ class DetailScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const PageTitle(
-                  title: "Convert",
-                ),
+                const PageTitle(title: "Convert"),
                 SizedBox(height: 4.h),
                 Card(
                   elevation: 0.5,
