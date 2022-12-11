@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controllers/api_service_controller.dart';
-import '../widgets/coin_widget.dart';
+import '../utils/widgets/coin_widget.dart';
 import 'detail_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final apiController = Get.put(ApiServiceController());
     return Scaffold(
-      backgroundColor: appColors.shadowBlue,
+      backgroundColor: appColors.shadowColor,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(20.sp),
