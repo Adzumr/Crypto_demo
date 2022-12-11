@@ -2113,7 +2113,6 @@ io.flutter.plugin.common.MethodCall:
     public boolean hasArgument(java.lang.String)
 io.flutter.plugin.common.MethodChannel:
     private static final java.lang.String TAG
-    public void <init>(io.flutter.plugin.common.BinaryMessenger,java.lang.String)
     public void resizeChannelBuffer(int)
 io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback
 io.flutter.plugin.common.PluginRegistry$Registrar
@@ -8524,6 +8523,18 @@ kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineException
 kotlinx.coroutines.test.TestCoroutineContext
 kotlinx.coroutines.test.TestCoroutineContextKt
 kotlinx.coroutines.test.TimedRunnableObsolete
+net.jonhanson.flutter_native_splash.BuildConfig
+net.jonhanson.flutter_native_splash.R$attr
+net.jonhanson.flutter_native_splash.R$color
+net.jonhanson.flutter_native_splash.R$dimen
+net.jonhanson.flutter_native_splash.R$drawable
+net.jonhanson.flutter_native_splash.R$id
+net.jonhanson.flutter_native_splash.R$integer
+net.jonhanson.flutter_native_splash.R$layout
+net.jonhanson.flutter_native_splash.R$string
+net.jonhanson.flutter_native_splash.R$style
+net.jonhanson.flutter_native_splash.R$styleable
+net.jonhanson.flutter_native_splash.R
 org.intellij.lang.annotations.Flow
 org.intellij.lang.annotations.Identifier
 org.intellij.lang.annotations.JdkConstants$AdjustableOrientation

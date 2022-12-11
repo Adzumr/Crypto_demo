@@ -17,6 +17,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/Users/Adzumr/Documents/GitHub/Crypto_demo/android@@:flutter_native_splash::release"
+      jars="/Users/Adzumr/Documents/GitHub/Crypto_demo/build/flutter_native_splash/.transforms/dc0b15f1fe4e1f57cca298e3eece18cd/transformed/out/jars/classes.jar"
+      resolved="net.jonhanson.flutter_native_splash:flutter_native_splash:unspecified"
+      folder="/Users/Adzumr/Documents/GitHub/Crypto_demo/build/flutter_native_splash/.transforms/dc0b15f1fe4e1f57cca298e3eece18cd/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="io.flutter:flutter_embedding_release:1.0.0-8f2221fbef28b478debb78dd233f5250b220ca99@jar"
       jars="/Users/Adzumr/.gradle/caches/modules-2/files-2.1/io.flutter/flutter_embedding_release/1.0.0-8f2221fbef28b478debb78dd233f5250b220ca99/f08f50d775a63bfaed1b525ae0f2294537b61713/flutter_embedding_release-1.0.0-8f2221fbef28b478debb78dd233f5250b220ca99.jar"
       resolved="io.flutter:flutter_embedding_release:1.0.0-8f2221fbef28b478debb78dd233f5250b220ca99"/>

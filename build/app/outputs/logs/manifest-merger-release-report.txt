@@ -22,6 +22,7 @@ INJECTED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/An
 INJECTED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:1:1-37:12
 INJECTED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml:1:1-37:12
 MERGED from [:path_provider_android] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_native_splash] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/Adzumr/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/Adzumr/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/Adzumr/.gradle/caches/transforms-3/0e0e1a382b52c0572988a1c50e96d2f7/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -74,6 +75,8 @@ INJECTED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/An
 INJECTED from /Users/Adzumr/Documents/GitHub/Crypto_demo/android/app/src/main/AndroidManifest.xml
 MERGED from [:path_provider_android] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] /Users/Adzumr/Documents/GitHub/Crypto_demo/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/Adzumr/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/Adzumr/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/Adzumr/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41

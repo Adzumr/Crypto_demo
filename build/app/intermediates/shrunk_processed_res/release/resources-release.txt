@@ -523,6 +523,7 @@ domain
 kotlin.jvm.internal.StringCompanionOb...
 viewType
 editingValue
+getPlatformVersion
 OFFER_FAILED
 invokeSuspend
 SidecarCompat
@@ -751,6 +752,7 @@ CUT
 BOTTOM_OVERLAYS
 _decision
 kotlinx.coroutines.flow.AbstractFlow
+flutter_native_splash
 input_method
 oldText
 Clipboard.hasStrings
@@ -1073,6 +1075,7 @@ Marking id:action_text:2131034148 used because it matches string pool constant a
 Marking id:actions:2131034149 used because it matches string pool constant action
 Marking id:text:2131034184 used because it matches string pool constant text
 Marking id:text2:2131034185 used because it matches string pool constant text
+Marking drawable:background:2130968576 used because it matches string pool constant background
 Marking attr:activityAction:2130771968 used because it matches string pool constant activity
 Marking attr:activityName:2130771969 used because it matches string pool constant activity
 Marking id:line1:2131034160 used because it matches string pool constant line
@@ -1109,6 +1112,7 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @attr/ttcIndex : reachable=false
 @color/androidx_core_ripple_material_light : reachable=true
 @color/androidx_core_secondary_text_default_material_light : reachable=true
+@color/ic_launcher_background : reachable=false
 @color/notification_action_color_filter : reachable=false
     @color/androidx_core_secondary_text_default_material_light
 @color/notification_icon_bg_color : reachable=false
@@ -1135,7 +1139,10 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @dimen/notification_subtext_size : reachable=false
 @dimen/notification_top_pad : reachable=false
 @dimen/notification_top_pad_large_text : reachable=false
+@drawable/background : reachable=true
 @drawable/launch_background : reachable=false
+    @drawable/background
+    @drawable/splash
 @drawable/notification_action_background : reachable=false
     @color/androidx_core_ripple_material_light
     @dimen/compat_button_inset_horizontal_material
@@ -1160,6 +1167,7 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @drawable/notification_tile_bg : reachable=false
     @drawable/notify_panel_notification_icon_bg
 @drawable/notify_panel_notification_icon_bg : reachable=false
+@drawable/splash : reachable=false
 @id/accessibility_action_clickable_span : reachable=true
 @id/accessibility_custom_action_0 : reachable=true
 @id/accessibility_custom_action_1 : reachable=true
@@ -1266,6 +1274,12 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @layout/notification_template_part_time : reachable=false
     @style/TextAppearance_Compat_Notification_Time
 @mipmap/ic_launcher : reachable=true
+    @color/ic_launcher_background
+    @mipmap/ic_launcher_foreground
+@mipmap/ic_launcher_foreground : reachable=false
+@mipmap/ic_launcher_round : reachable=false
+    @color/ic_launcher_background
+    @mipmap/ic_launcher_foreground
 @string/status_bar_notification_info_overflow : reachable=false
 @style/LaunchTheme : reachable=true
     @drawable/launch_background
@@ -1293,6 +1307,7 @@ The root reachable resources are:
  attr:shortcutMatchRequired:2130771992
  color:androidx_core_ripple_material_light:2130837504
  color:androidx_core_secondary_text_default_material_light:2130837505
+ drawable:background:2130968576
  id:accessibility_action_clickable_span:2131034112
  id:accessibility_custom_action_0:2131034113
  id:accessibility_custom_action_1:2131034114
@@ -1375,3 +1390,9 @@ Skipped unused resource res/layout-v21/notification_action.xml: 2216 bytes (repl
 Skipped unused resource res/layout-v21/notification_action_tombstone.xml: 2677 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout-v21/notification_template_custom_big.xml: 6318 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout-v21/notification_template_icon_group.xml: 2432 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/ic_launcher_round.png: 1640 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/ic_launcher_round.png: 3025 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/ic_launcher_round.png: 3487 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/ic_launcher_round.png: 6557 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/ic_launcher_round.png: 8049 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-anydpi-v26/ic_launcher_round.xml: 413 bytes (replaced with small dummy file of size 9 bytes)

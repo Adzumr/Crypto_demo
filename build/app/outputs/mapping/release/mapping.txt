@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 3.1.66
 # min_api: 16
-# pg_map_id: aacb1e9
+# pg_map_id: 8aacd72
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"1.0"}
 androidx.activity.Cancellable -> androidx.activity.a:
@@ -5049,6 +5049,11 @@ l.FlutterLoader$1$$ExternalSyntheticLambda0 -> l.c:
       # {"id":"com.android.tools.r8.synthesized"}
     void io.flutter.embedding.engine.loader.FlutterLoader$1$$InternalSyntheticLambda$0$e7ddcce9e479fd94a1e1d0284d3cc77e33f22c5efd73c8b615c7c4bb4c55e189$0.run() -> run
       # {"id":"com.android.tools.r8.synthesized"}
+net.jonhanson.flutter_native_splash.FlutterNativeSplashPlugin -> x0.a:
+    io.flutter.plugin.common.MethodChannel channel -> a
+    void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> f
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
 r0.CommonPool$$ExternalSyntheticLambda0 -> r0.t:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}

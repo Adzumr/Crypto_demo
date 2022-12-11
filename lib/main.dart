@@ -2,10 +2,12 @@ import 'package:cryppto_demo/utils/button_styles.dart';
 import 'package:cryppto_demo/utils/colors.dart';
 import 'package:cryppto_demo/utils/font_styles.dart';
 import 'package:cryppto_demo/utils/textfield_style.dart';
-import 'package:cryppto_demo/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:sizer/sizer.dart';
+
+import 'views/error_screen.dart';
+import 'views/home_screen.dart';
 
 void main() {
   runApp(const CryptoApp());
@@ -25,6 +27,12 @@ class CryptoApp extends StatelessWidget {
     return Sizer(
       builder: ((context, orientation, deviceType) {
         return GetMaterialApp(
+          builder: (BuildContext context, Widget? widget) {
+            ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
+              return const CustomErrorScreen();
+            };
+            return widget!;
+          },
           debugShowCheckedModeBanner: false,
           title: 'Crypto App',
           theme: ThemeData(
